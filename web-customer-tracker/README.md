@@ -15,4 +15,5 @@
 
  ```@Repository``` is for DAOImpl and sub class of ```@Component```
 
-
+  Displaying Customer list using JSTL tags
+  
