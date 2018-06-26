@@ -13,4 +13,6 @@
  Create Entity corrosponding to db table
  ``` @GeneratedValue(strategy=GenerationType.IDENTITY)``` used for auto increment column
 
- 
+ ```@Repository``` is for DAOImpl and sub class of ```@Component```
+
+
