@@ -17,6 +17,12 @@ href="${ pageContext.request.contextPath }/resources/css/style.css" />
 	
 	<div id="container">
 		<div id="content">
+		
+		<input type="button" value="Add Customer"
+			onClick="window.location.href='showFormForAdd'; return false; "
+			class="add-button"/>
+		
+		
 			<table>
 				<tr>
 					<th>First Name</th>
