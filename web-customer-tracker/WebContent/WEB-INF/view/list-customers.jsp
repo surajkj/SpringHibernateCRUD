@@ -36,11 +36,17 @@ href="${ pageContext.request.contextPath }/resources/css/style.css" />
 					<c:url var="updateLink" value="/customer/showFormForUpdate">
 						<c:param name="customerId" value="${cust.id }" />
 					</c:url>
+					
+					<c:url var="deleteLink" value="/customer/delete">
+						<c:param name="customerId" value="${cust.id }" />
+					</c:url>
 					<tr>
 						<td>${ cust.firstname }</td>
 						<td>${ cust.lastname }</td>
 						<td>${ cust.email }</td>
-						<td><a href="${ updateLink}">Update </a></td>
+						<td><a href="${ updateLink}">Update </a>
+						 | <a href="${ deleteLink}"
+						 onclick="if (!(confirm('Are you sure you want ot delete this customer ?'))) return false"> Delete </a> </td>
 					</tr>
 				</c:forEach>
 			</table>
